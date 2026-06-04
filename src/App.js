@@ -107,7 +107,7 @@ export default function App() {
   // ── Resume download — public folder se ───────────────────────────────────
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Vidhan_Tayade_Resume.pdf";
+    link.href = process.env.PUBLIC_URL + "/Vidhan_Tayade_Resume.pdf";
     link.download = "Vidhan_Tayade_Resume.pdf";
     link.click();
   };
